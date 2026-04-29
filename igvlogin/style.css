@@ -153,6 +153,12 @@ body {
   font-size: 12px; font-weight: 600; color: var(--text-muted);
 }
 
+.last-login-banner .banner-email {
+  font-size: 12px; font-weight: 500; color: var(--text-muted);
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.3px;
+}
+
 /* ── 分隔线 ── */
 .divider {
   display: flex; align-items: center; gap: 10px; margin-bottom: 16px;
