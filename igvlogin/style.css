@@ -129,49 +129,40 @@ body {
   text-align: center; margin-bottom: 28px; letter-spacing: -0.4px;
 }
 
-/* ── 上次登录卡片 ── */
-.last-login-card {
-  background: #FFF6F3;
-  border: 1.5px solid var(--igv-orange);
-  border-radius: 14px;
-  padding: 16px;
-  margin-bottom: 20px;
+/* ── 上次登录横幅 ── */
+.last-login-banner {
   display: flex;
   align-items: center;
-  gap: 12px;
-  cursor: pointer;
-  transition: background 0.15s;
-  position: relative;
-  margin-top: 8px;
+  gap: 8px;
+  background: #f9fafb;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 9px 14px;
+  margin-bottom: 20px;
+  cursor: default;
+  user-select: none;
 }
 
-.last-login-card:hover { background: #FDEAE4; }
-
-.last-login-tag {
-  position: absolute; top: -10px; left: 14px;
-  background: var(--igv-orange); color: white;
-  font-size: 10px; font-weight: 600;
-  padding: 2px 10px; border-radius: 20px; letter-spacing: 0.3px;
+.last-login-banner .banner-icon {
+  width: 26px; height: 26px; border-radius: 7px;
+  background: white;
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
 }
 
-.last-login-icon {
-  width: 42px; height: 42px; border-radius: 11px;
-  background: white; display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08); flex-shrink: 0;
+.last-login-banner .banner-label {
+  font-size: 11px; color: var(--text-muted); font-weight: 500;
 }
 
-.last-login-info { flex: 1; }
-
-.last-login-info .lbl {
-  font-size: 11px; color: var(--text-muted);
-  font-weight: 500; margin-bottom: 3px;
+.last-login-banner .banner-method {
+  font-size: 13px; font-weight: 600; color: var(--text-secondary);
 }
 
-.last-login-info .method-name {
-  font-size: 15px; font-weight: 600; color: var(--text-primary);
+.last-login-banner .banner-dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  background: #d1d5db; flex-shrink: 0; margin: 0 2px;
 }
-
-.last-login-arrow { color: var(--igv-orange); }
 
 /* ── 分隔线 ── */
 .divider {
